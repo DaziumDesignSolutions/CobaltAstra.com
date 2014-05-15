@@ -1,0 +1,28 @@
+{
+  "locals": {
+    "url": "http://www.cobaltastra.com",
+    "name": "Cobalt Astra",
+    "owner": "Cobalt Astra",
+    "description": "Website for Cobalt Astra"
+  },
+  "plugins": [
+    "wintersmith-livereload",
+    "wintersmith-node-sass",
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
