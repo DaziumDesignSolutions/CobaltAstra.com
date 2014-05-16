@@ -5,15 +5,16 @@ block title
   = locals.name
 
 block content
-  .container
-    - var solutions = _.chain(contents['solutions-overview']._.pages).sortBy(function(item) {
-    -   var match = item.filepath.relative.match(/solutions-overview[\/](\d+)-(\w+?)\.md/)
-    -   return parseInt(match[1]);
-    - }).value();
+  #our-solutions
+    .container
+      - var solutions = _.chain(contents['solutions-overview']._.pages).sortBy(function(item) {
+      -   var match = item.filepath.relative.match(/solutions-overview[\/](\d+)-(\w+?)\.md/)
+      -   return parseInt(match[1]);
+      - }).value();
 
-    #solutions-overview
-      each solution in solutions
-        include partials/solution-overview
+      #solutions-overview
+        each solution in solutions
+          include partials/solution-overview
 
 block footermsg
   .container

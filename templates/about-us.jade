@@ -1,0 +1,54 @@
+extends layout
+
+block title
+  | About Us | 
+  = locals.name
+
+block content
+  #about-us
+    .container
+      - var about_us_content = contents['about-us']._.pages
+
+      #expert-knowledge.content-area
+        - var content = contents['about-us']['expert-knowledge.md']
+        .hpadded
+          article.row
+            .col-sm-8!= content.html
+            aside.col-sm-4
+              img.img-responsive(src='/about-us/' + content.metadata.aside.image)
+
+      #our-approach.content-area
+        - var content = contents['about-us']['our-approach.md']
+        .graybox
+          .padded
+            != content.html
+
+
+      #advanced-technology.content-area
+        - var content = contents['about-us']['advanced-technology.md']
+        .hpadded
+          article.row
+            .col-sm-8!= content.html
+            aside.col-sm-4
+              p(style='margin-top: 70px;')
+                img.img-responsive(src='/about-us/' + content.metadata.aside.image)
+              - var aside_message = contents['about-us'][content.metadata.aside.message].html
+              p!= aside_message
+
+      #trusted-partnerships.content-area
+        - var content = contents['about-us']['trusted-partnerships.md']
+        - var content_left  = contents['about-us']['trusted-partnerships']['part-of-cobalt-family.md']
+        - var content_right = contents['about-us']['trusted-partnerships']['our-solutions-work.md']
+        .graybox
+          .padded
+            != content.html
+            .row
+              .col-sm-6!= content_left.html
+              .col-sm-6!= content_right.html
+
+
+block footermsg
+  .container
+    .heading-box.yellow
+      h3 The Strength of Your Business Lies<br/> in Your Workforce Solutions
+

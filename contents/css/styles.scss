@@ -25,11 +25,13 @@ $navInnerBg: $grayLight;
 $footerBg: $grayLighter;
 $footerInnerBg: $grayLight;
 
+$contentTextColor: $grayDark;
+
 /**
  * Layout related vars
  */
 $paddingAmt: 40px;
-$sectionMarginAmt: 20px;
+$contentAreaMarginAmt: 40px;
 
 
 /**
@@ -72,6 +74,9 @@ p {
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-justify { text-align: justify; }
+.content-area {
+  margin-bottom: $contentAreaMarginAmt;
+}
 
 
 /**
@@ -111,6 +116,11 @@ nav {
 .padded {
   padding: $paddingAmt;
 }
+.padded, .vpadded {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+}
 .heading-box {
   &.yellow   { background-color: $yellow; }
   &.brown    { background-color: $brown; }
@@ -128,6 +138,10 @@ nav {
     margin: 0 auto;
   }
 
+}
+#content {
+  margin-top: $contentAreaMarginAmt;
+  color: $contentTextColor;
 }
 footer {
   margin: $paddingAmt 0 0;
@@ -175,17 +189,17 @@ footer {
 }
 #business-cornerstone {
   margin: 40px 0;
-  color: $grayDark;
+  /* color: $grayDark; */
 }
 
 $tableCellPadding: 1em;
 
 #solutions-overview {
-  color: $grayDark;
+  /* color: $grayDark; */
 
   .solution-overview {
     background: $grayLight;
-    margin-bottom: $sectionMarginAmt;
+    margin-bottom: $contentAreaMarginAmt;
 
     table {
       background-color: white;
@@ -238,5 +252,11 @@ $tableCellPadding: 1em;
   p {
     font-size: 1.2em;
     margin-bottom: 0.75em;
+  }
+}
+#about-us {
+  strong {
+    font-weight: 400;
+    font-size: 1.4em;
   }
 }
