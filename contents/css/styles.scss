@@ -1,0 +1,178 @@
+/**
+ * Color palette
+ */
+$gray: #E6E7E8;
+$grayLight: #EFEFF0;
+$grayLighter: #F6F6F6;
+$grayDark: #58595B;
+
+$yellow: #C99020;
+$brown: #944D16;
+$blueDark: #004A75;
+$blue: #0285C8;
+$redBrown: #954D16;
+
+
+/**
+ * Color palette assignment
+ */
+$headerBg: $grayLighter;
+$headerInnerBg: $gray;
+
+$navBg: $grayLighter;
+$navInnerBg: $grayLight;
+
+$footerBg: $grayLighter;
+$footerInnerBg: $grayLight;
+
+/**
+ * Layout related vars
+ */
+$paddingAmt: 40px;
+
+
+/**
+ * Layout helpers
+ */
+.xxx-large {
+  font-size: 3em;
+  display: block;
+  line-height: 1.2em;
+}
+.large{
+  font-size: 1.2em;
+}
+.small {
+  font-size: 0.85em;
+}
+.x-small {
+  font-size: 0.7em;
+}
+p {
+  &.small,
+  &.x-small {
+    margin-bottom: 0.5em;
+  }
+}
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+.times { font-family: "Times New Roman", times, serif; }
+.black { color: black }
+
+.float-left {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.float-right {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+.align-center { text-align: center; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-justify { text-align: justify; }
+
+
+/**
+ * General sections
+ */
+header {
+  background: $headerBg;
+
+  .container {
+    background: $headerInnerBg;
+    padding: 10px 0 20px 20px;
+  }
+}
+
+nav {
+  border: 0 none !important;
+  border-radius: 0 !important;
+  background: $navBg;
+
+  .container {
+    background: $navInnerBg;
+  }
+}
+.graybox {
+  background-color: $grayLight;
+
+  .section {
+    padding: $paddingAmt;
+  }
+}
+.hpadded {
+  padding: 0 $paddingAmt;
+}
+.vpadded {
+  padding: $paddingAmt 0;
+}
+.padded {
+  padding: $paddingAmt;
+}
+.heading-box {
+  &.yellow   { background-color: $yellow; }
+  &.brown    { background-color: $brown; }
+  &.blueDark { background-color: $blueDark; }
+  &.blue     { background-color: $blue; }
+  &.redBrown { background-color: $redBrown; }
+
+  padding: $paddingAmt;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 32px;
+    color: white;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+}
+footer {
+  margin: $paddingAmt 0 0;
+  background: $footerBg;
+
+  .container {
+    padding: $paddingAmt / 2 $paddingAmt / 2 $paddingAmt;
+    background: $footerInnerBg;
+  }
+}
+
+
+/**
+ * Content
+ */
+#services-overview {
+  margin: 20px 0;
+
+  .service {
+    .icon, h4, p {
+      text-align: center;
+    }
+
+  }
+}
+#home-banner {
+  height: 400px;
+  background: url(/images/home-banner.jpg) no-repeat center center transparent;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    $h1Width: 650px;
+    $h1MarginLeft: -$h1Width / 2;
+
+    width: $h1Width;
+    margin-left: $h1MarginLeft;
+
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+  }
+}
+#business-cornerstone {
+  margin: 40px 0;
+  color: $grayDark;
+}

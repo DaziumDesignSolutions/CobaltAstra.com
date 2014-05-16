@@ -7,8 +7,7 @@
   },
   "plugins": [
     "wintersmith-livereload",
-    "wintersmith-node-sass",
-    "./plugins/paginator.coffee"
+    "wintersmith-node-sass"
   ],
   "require": {
     "moment": "moment",
@@ -24,5 +23,6 @@
   },
   "paginator": {
     "perPage": 3
-  }
+  },
+  "port": "4567"
 }
