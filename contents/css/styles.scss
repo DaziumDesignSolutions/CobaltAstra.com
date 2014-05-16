@@ -167,14 +167,13 @@ footer {
 
   }
 }
-#home-banner {
+@mixin banner($h1_width: 650px) {
   height: 400px;
-  background: url(/images/home-banner.jpg) no-repeat center center transparent;
   position: relative;
   text-align: center;
 
   h1 {
-    $h1Width: 650px;
+    $h1Width: $h1_width;
     $h1MarginLeft: -$h1Width / 2;
 
     width: $h1Width;
@@ -187,15 +186,22 @@ footer {
     text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
   }
 }
+#home-banner {
+  @include banner;
+  background: url(/images/home-banner.jpg) no-repeat center center transparent;
+}
+#contact-us-banner {
+  @include banner(100%);
+  background: url(/images/home-banner.jpg) no-repeat center center transparent;
+}
+
 #business-cornerstone {
   margin: 40px 0;
-  /* color: $grayDark; */
 }
 
 $tableCellPadding: 1em;
 
 #solutions-overview {
-  /* color: $grayDark; */
 
   .solution-overview {
     background: $grayLight;

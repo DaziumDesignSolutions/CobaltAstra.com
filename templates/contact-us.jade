@@ -1,0 +1,27 @@
+extends layout
+
+block title
+  | Contact Us | 
+  = locals.name
+
+block content
+  #contact-us
+
+    #contact-us-banner.content-area
+      h1 Expert Knowledge. Advanced Technology.<br /> Strategic Partnerships.
+
+    .container
+      .graybox.content-area
+        - var content = contents['contact-us-content.md']
+        .padded
+          != content.html
+
+      .content-area
+        .hpadded
+          p
+            a.btn.btn-primary(href='#', role='button') REQUEST A CONSULTATION
+          p
+            a.btn.btn-primary(href='#', role='button') PARTNER WITH US
+          p
+            a.btn.btn-primary(href='#', role='button') REFER A NEW CLIENT
+
