@@ -29,6 +29,7 @@ $footerInnerBg: $grayLight;
  * Layout related vars
  */
 $paddingAmt: 40px;
+$sectionMarginAmt: 20px;
 
 
 /**
@@ -175,4 +176,67 @@ footer {
 #business-cornerstone {
   margin: 40px 0;
   color: $grayDark;
+}
+
+$tableCellPadding: 1em;
+
+#solutions-overview {
+  color: $grayDark;
+
+  .solution-overview {
+    background: $grayLight;
+    margin-bottom: $sectionMarginAmt;
+
+    table {
+      background-color: white;
+      border: 1px solid $grayDark;
+
+      thead {
+        th {
+          padding: $tableCellPadding / 2 $tableCellPadding;
+
+          &:first-child {
+            background-color: $blue;
+            color: white;
+          }
+        }
+      }
+
+      tr {
+        td {
+          width: 25%;
+        }
+      }
+
+      thead {
+        th:first-child {
+          width: 50%;
+        }
+      }
+
+      td {
+        padding: $tableCellPadding / 2 $tableCellPadding;
+        vertical-align: top;
+      }
+
+      th, td {
+        border-right: 1px solid $grayDark;
+        border-bottom: 1px solid $grayDark;
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  h3 {
+    font-style: italic;
+    margin-bottom: 0.75em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 0.75em;
+  }
 }

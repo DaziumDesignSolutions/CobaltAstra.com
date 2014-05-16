@@ -1,0 +1,22 @@
+extends layout
+
+block title
+  | Our Solutions | 
+  = locals.name
+
+block content
+  .container
+    - var solutions = _.chain(contents['solutions-overview']._.pages).sortBy(function(item) {
+    -   var match = item.filepath.relative.match(/solutions-overview[\/](\d+)-(\w+?)\.md/)
+    -   return parseInt(match[1]);
+    - }).value();
+
+    #solutions-overview
+      each solution in solutions
+        include partials/solution-overview
+
+block footermsg
+  .container
+    .heading-box.redBrown
+      h3 Improving productivity and<br/> Increasing Profitability
+
