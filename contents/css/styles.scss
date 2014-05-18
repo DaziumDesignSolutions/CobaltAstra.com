@@ -88,6 +88,16 @@ header {
   .container {
     background: $headerInnerBg;
     padding: 10px 0 20px 20px;
+    height: 117px;
+  }
+
+  #logo {
+    a {
+      display: inline-block;
+      width: 300px;
+      height: 57px;
+      background: url('/images/logo-cobaltastra.png') no-repeat 0 0 transparent;
+    }
   }
 }
 
@@ -264,5 +274,63 @@ $tableCellPadding: 1em;
   strong {
     font-weight: 400;
     font-size: 1.4em;
+  }
+}
+
+html.js {
+  body {
+    #content {
+      transition-property: opacity;
+      transition-duration: 150ms;
+      opacity: 0;
+    }
+
+    &.fadeout {
+      #content {
+        opacity: 0;
+      }
+    }
+
+    &.fadein {
+      #content {
+        opacity: 1;
+      }
+    }
+  }
+
+  .content-area {
+    transition-property: all;
+    transition-duration: 500ms;
+    opacity: 1;
+
+    &.will-fadein {
+      opacity: 0;
+      -webkit-transform: translate(0, -50px);
+    }
+  }
+
+  #solutions-overview {
+    .solution-overview {
+      table {
+        width: 200px;
+
+        &.expanded {
+          width: 100%;
+        }
+
+        td, th {
+          display: none;
+        }
+
+        thead {
+          tr {
+            th:first-child {
+              display: table-cell;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
   }
 }
