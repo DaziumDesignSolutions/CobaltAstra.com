@@ -1,5 +1,6 @@
 - var p = solution
+- var solution_id = solution.filepath.relative.match(/\d-(.+?)\.md$/)[1]
 
-.solution-overview.content-area
+.solution-overview.content-area(id=solution_id, name=solution_id)
   .padded
     .content!= p.html
