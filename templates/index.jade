@@ -7,56 +7,51 @@ block title
 block content
   #home-index
     .container
-      #services-overview.content-area
+      #home-solutions-overview.content-area
         .row
-          .service.col-sm-4
+          .solution.col-sm-4
             .section
               .icon
                 - icon_width, icon_height = 60
                 img(src=contents.images['icon-enabling.png'].url, width=icon_width, height=icon_height)
-              h4 ENABLING YOUR BUSINESS
-              p We will take care of basic HR functions from payroll to benefit administration to workers’ comp.
+              .content!= contents.home['solutions-overview']['1-enabling.md'].html
               p
                 a.btn.btn-sm.btn-primary(href='/our-solutions.html#enabling', role='button') HR SERVICES
 
-          .service.col-sm-4
+          .solution.col-sm-4
             .section
               .icon
                 - icon_width, icon_height = 60
                 img(src=contents.images['icon-growing.png'].url, width=icon_width, height=icon_height)
-              h4 ENABLING YOUR BUSINESS
-              p You need to attract talent, develop skills and reward employees preparing you for growth.
+              .content!= contents.home['solutions-overview']['2-growing.md'].html
               p
                 a.btn.btn-sm.btn-primary(href='/our-solutions.html#growing', role='button') HR CONSULTING
 
-          .service.col-sm-4
+          .solution.col-sm-4
             .section
               .icon
                 - icon_width, icon_height = 60
                 img(src=contents.images['icon-empowering.png'].url, width=icon_width, height=icon_height)
-              h4 ENABLING YOUR BUSINESS
-              p You keep your focus on your business and we’ll be your hR department.
+              .content!= contents.home['solutions-overview']['3-empowering.md'].html
               p
                 a.btn.btn-sm.btn-primary(href='/our-solutions.html#empowering', role='button') HR OUTSOURCING
 
     #home-banner.content-area
-      h1 Building productivity into a workforce one employee at a time
+      != contents.home['h1-title.md'].html
 
     .container
       #business-cornerstone.graybox.content-area
         .section
-          h2 THE CORNERSTONE OF YOUR BUSINESS
-          h3 We deliver a full suite of HR services and solutions so that you as a busy business owner can focus your attention on your clients and the growth of your business.
+          != contents.home['business-cornerstone.md'].html
 
           .hpadded
             .row
               .col-sm-6
-                h3 Our History
-                p For over 15 years, Cobalt Astra has delivered HR Administration and Consulting services to a broad array of businesses in diverse industries. We pride ourselves in understanding your business first – including your unique employer culture – and then recommending appropriate HR solutions to support your business.
+                != contents.home['business-cornerstone']['col-left.md'].html
 
               .col-sm-6
-                h3 What Sets Us Apart
-                p Cobalt Astra delivers HR services in a very flexible business model. We can provide our HR services and consulting solutions to your business in a PEO, ASO or HRO model1. We deliver our services - when you need it, how you need it - through highly qualified HR professionals with a personalized touch.
+                != contents.home['business-cornerstone']['col-right.md'].html
+
 
           p.align-right(style='margin-top: 20px;')
             a(href='#') Complete HR outsourcing solution.

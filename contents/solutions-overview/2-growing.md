@@ -7,15 +7,15 @@ We partner with you to develop an organizational “people” strategy which eng
 <table>
   <thead>
     <tr>
-      <th>HR CONSULTING</th>
-      <th>OFFERING?</th>
-      <th>WHY IT IS IMPORTANT?</th>
+      <th>Overview</th>
+      <th>Services</th>
+      <th>Advantages</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5">
-        <p>Your business is growing and so are your human resources needs. Cobalt astra can help you hire the right talent, manage and develop this talent and even reward them as your business grows profitably.</p>
+      <td rowspan="6">
+        <p>Your business is growing and so are your human resources needs. Cobalt Astra can help you hire the right talent, manage and develop this talent and even reward them as your business grows profitably.</p>
         <p>Our team provides expertise in all aspects of recruiting, workforce planning, leadership/employee development, performance management and compensation design and administration.</p>
       </td>
     </tr>
@@ -34,6 +34,10 @@ We partner with you to develop an organizational “people” strategy which eng
     <tr>
       <td>Training &amp; Development</td>
       <td>The Astra business can design, lead and proctor educational development programs including technical, leadership and employment subject matter</td>
+    </tr>
+    <tr>
+      <td>Compensation Design &amp; Administration</td>
+      <td>Our consultants can help to design the appropriate pay programs to ensure your employees are motivated and deliver results for your business.</td>
     </tr>
   </tbody>
 </table>
