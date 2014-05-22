@@ -7,9 +7,9 @@ We partner with you to develop an organizational “people” strategy which eng
 <table>
   <thead>
     <tr>
-      <th>Overview</th>
-      <th>Services</th>
-      <th>Advantages</th>
+      <th>OVERVIEW</th>
+      <th>SERVICES</th>
+      <th>ADVANTAGES</th>
     </tr>
   </thead>
   <tbody>
@@ -21,22 +21,22 @@ We partner with you to develop an organizational “people” strategy which eng
     </tr>
     <tr>
       <td>Professional Search and Recruitment</td>
-      <td>We can help you find the right associates with the right skills to move your business forward</td>
+      <td>We can help you find the right associates with the right skills to move your business forward.</td>
     </tr>
     <tr>
       <td>Workforce Planning and Analytics</td>
-      <td>Our robust technology platform allows you to set-up HR metrics that measure the productivity and effectiveness of your people</td>
+      <td>Our robust technology platform allows you to set up HR metrics that measure the productivity and effectiveness of your people.</td>
     </tr>
     <tr>
       <td>HR Assessments</td>
-      <td>We can run your business through a multi-disciplined HR “check-up” to determine where programs or practices could be improved</td>
+      <td>We can run your business through a multi-disciplined HR “check-up” to determine where programs or practices could be improved.</td>
     </tr>
     <tr>
-      <td>Training &amp; Development</td>
-      <td>The Astra business can design, lead and proctor educational development programs including technical, leadership and employment subject matter</td>
+      <td>Training and Development</td>
+      <td>The Astra business can design, lead and proctor educational development programs including technical, leadership and employment subject matter.</td>
     </tr>
     <tr>
-      <td>Compensation Design &amp; Administration</td>
+      <td>Compensation Design and Administration</td>
       <td>Our consultants can help to design the appropriate pay programs to ensure your employees are motivated and deliver results for your business.</td>
     </tr>
   </tbody>

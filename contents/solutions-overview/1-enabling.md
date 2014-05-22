@@ -7,9 +7,9 @@ Select from our comprehensive suite of HR services and tools and maintain a pers
 <table>
   <thead>
     <tr>
-      <th>Overview</th>
-      <th>Services</th>
-      <th>Advantages</th>
+      <th>OVERVIEW</th>
+      <th>SERVICES</th>
+      <th>ADVANTAGES</th>
     </tr>
   </thead>
   <tbody>
@@ -28,7 +28,7 @@ Select from our comprehensive suite of HR services and tools and maintain a pers
       <td>We partner with our clients to select and administer employee benefits, while at the same time responding to the individual needs of your employees.</td>
     </tr>
     <tr>
-      <td>Workers Compensation</td>
+      <td>Workers' Compensation</td>
       <td>The Cobalt Astra team administers the coverage for your company with services such as premium payment, annual policy audits, and claim resolution.</td>
     </tr>
     <tr>

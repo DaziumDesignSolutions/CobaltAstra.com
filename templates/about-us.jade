@@ -15,7 +15,9 @@ block content
           article.row
             .col-sm-8!= content.html
             aside.col-sm-4
-              img.img-responsive(src='/about-us/' + content.metadata.aside.image)
+              //- img.img-responsive(src='/about-us/' + content.metadata.aside.image)
+              p
+                strong Expert knowledge text or graphic here
 
       #our-approach.content-area
         - var content = contents['about-us']['our-approach.md']
@@ -42,7 +44,7 @@ block content
             .col-sm-8!= content.html
             aside.col-sm-4
               p(style='margin-top: 70px;')
-                img.img-responsive(src='/about-us/' + content.metadata.aside.image)
+                //- img.img-responsive(src='/about-us/' + content.metadata.aside.image)
               - var aside_message = contents['about-us'][content.metadata.aside.message].html
               p!= aside_message
 

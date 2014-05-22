@@ -7,9 +7,9 @@ Our outsourcing solutions work for businesses of all sizes. Invest in us, and yo
 <table>
   <thead>
     <tr>
-      <th>Overview</th>
-      <th>Services</th>
-      <th>Advantages</th>
+      <th>OVERVIEW</th>
+      <th>SERVICES</th>
+      <th>ADVANTAGES</th>
     </tr>
   </thead>
   <tbody>
