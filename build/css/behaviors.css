@@ -1,0 +1,42 @@
+html.js .content-area {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  -ms-transition-duration: 400ms;
+  transition-duration: 400ms;
+  opacity: 1;
+}
+html.js .content-area.will-fadein {
+  opacity: 0;
+  -webkit-transform: translate(0, -30px);
+  -moz-transform: translate(0, -30px);
+  -ms-transform: translate(0, -30px);
+  -o-transform: translate(0, -30px);
+  transform: translate(0, -30px);
+}
+html.js #solutions-overview .solution-overview table {
+  width: 200px;
+}
+html.js #solutions-overview .solution-overview table.expanded {
+  width: 100%;
+}
+html.js #solutions-overview .solution-overview table td,
+html.js #solutions-overview .solution-overview table th {
+  display: none;
+}
+html.js #solutions-overview .solution-overview table thead tr th:first-child {
+  display: table-cell;
+  cursor: pointer;
+}
+html.js #solutions-overview .solution-overview:target table {
+  width: 100% !important;
+}
+html.js #solutions-overview .solution-overview:target table td,
+html.js #solutions-overview .solution-overview:target table th {
+  display: table-cell !important;
+}
