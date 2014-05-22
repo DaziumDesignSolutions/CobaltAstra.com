@@ -12,8 +12,7 @@ block content
           .solution.col-sm-4
             .section
               .icon
-                - icon_width, icon_height = 60
-                img(src=contents.images['icon-enabling.png'].url, width=icon_width, height=icon_height)
+                img.greenDark-bg(src=contents.images['icon-enabling.png'].url)
               .content!= contents.home['solutions-overview']['1-enabling.md'].html
               p
                 a.btn.btn-sm.btn-primary(href='/our-solutions.html#enabling', role='button') HR SERVICES
@@ -21,8 +20,7 @@ block content
           .solution.col-sm-4
             .section
               .icon
-                - icon_width, icon_height = 60
-                img(src=contents.images['icon-growing.png'].url, width=icon_width, height=icon_height)
+                img.redBrown-bg(src=contents.images['icon-growing.png'].url)
               .content!= contents.home['solutions-overview']['2-growing.md'].html
               p
                 a.btn.btn-sm.btn-primary(href='/our-solutions.html#growing', role='button') HR CONSULTING
@@ -30,8 +28,7 @@ block content
           .solution.col-sm-4
             .section
               .icon
-                - icon_width, icon_height = 60
-                img(src=contents.images['icon-empowering.png'].url, width=icon_width, height=icon_height)
+                img.blueDark-bg(src=contents.images['icon-empowering.png'].url)
               .content!= contents.home['solutions-overview']['3-empowering.md'].html
               p
                 a.btn.btn-sm.btn-primary(href='/our-solutions.html#empowering', role='button') HR OUTSOURCING
@@ -40,7 +37,7 @@ block content
       != contents.home['h1-title.md'].html
 
     .container
-      #business-cornerstone.graybox.content-area
+      #business-cornerstone.content-area
         .section
           != contents.home['business-cornerstone.md'].html
 

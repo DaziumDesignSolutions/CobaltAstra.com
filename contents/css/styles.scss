@@ -5,12 +5,13 @@ $gray: #E6E7E8;
 $grayLight: #EFEFF0;
 $grayLighter: #F6F6F6;
 $grayDark: #58595B;
+$grayDarker: #1A1919;
 
-$yellow: #C99020;
+$greenDark: #697146;
 $brown: #944D16;
-$blueDark: #004A75;
+$blueDark: #062d5d;
 $blue: #0285C8;
-$redBrown: #954D16;
+$redBrown: #6d2e38;
 
 
 /**
@@ -18,6 +19,7 @@ $redBrown: #954D16;
  */
 $headerBg: $grayLighter;
 $headerInnerBg: $gray;
+$headerTextColor: $grayDarker;
 
 $navBg: $grayLighter;
 $navInnerBg: $grayLight;
@@ -33,6 +35,17 @@ $contentTextColor: $grayDark;
 $paddingAmt: 40px;
 $contentAreaMarginAmt: 40px;
 
+
+/**
+ * Bootstrap overrides
+ */
+.btn-primary {
+  background-color: $blueDark;
+
+  &:hover {
+    background-color: lighten($blueDark, 5%);
+  }
+}
 
 /**
  * Layout helpers
@@ -77,6 +90,17 @@ p {
 .content-area {
   margin-bottom: $contentAreaMarginAmt;
 }
+.gray-bg        { background-color: $gray; }
+.grayLight-bg   { background-color: $grayLight; }
+.grayLighter-bg { background-color: $grayLighter; }
+.grayDark-bg    { background-color: $grayDark; }
+.grayDarker-bg  { background-color: $grayDarker; }
+.greenDark-bg   { background-color: $greenDark; }
+.brown-bg       { background-color: $brown; }
+.blueDark-bg    { background-color: $blueDark; }
+.blue-bg        { background-color: $blue; }
+.redBrown-bg    { background-color: $redBrown; }
+
 
 
 /**
@@ -84,27 +108,99 @@ p {
  */
 header {
   background: $headerBg;
+  color: $headerTextColor;
+
+  a {
+    color: $headerTextColor;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   .container {
     background: $headerInnerBg;
-    padding: 10px 0 20px 20px;
-    height: 117px;
+    padding: 20px 20px 20px 40px;
+    height: 123px;
   }
 
   #logo {
+    h1 {
+      margin: 0;
+    }
     a {
       display: inline-block;
       width: 300px;
-      height: 57px;
+      height: 77px;
       background: url('/images/logo-cobaltastra.png') no-repeat 0 0 transparent;
     }
   }
 }
 
-nav {
+nav#header-nav {
+  font-size: 0.85em;
+
+  ul {
+    li {
+      /* margin: 0 1em; */
+      margin: 0;
+      padding: 0;
+
+      &:before {
+        content: ' | ';
+        margin: 0 1em;
+      }
+
+      &:first-child {
+        &:before {
+          content: '';
+          margin-left: 0
+        }
+      }
+    }
+  }
+}
+
+nav#main-nav {
   border: 0 none !important;
   border-radius: 0 !important;
   background: $navBg;
+
+  color: $headerTextColor;
+
+  a {
+    color: $headerTextColor;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken($navBg, 15%);
+    }
+  }
+
+  .navbar-brand {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .nav {
+    font-size: 1.2em;
+
+    & > li {
+      & > a {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    background-color: transparent;
+
+    .icon-bar {
+      background-color: $grayDark;
+    }
+  }
 
   .container {
     background: $navInnerBg;
@@ -132,11 +228,11 @@ nav {
   }
 }
 .heading-box {
-  &.yellow   { background-color: $yellow; }
-  &.brown    { background-color: $brown; }
-  &.blueDark { background-color: $blueDark; }
-  &.blue     { background-color: $blue; }
-  &.redBrown { background-color: $redBrown; }
+  &.greenDark { background-color: $greenDark; }
+  &.brown     { background-color: $brown; }
+  &.blueDark  { background-color: $blueDark; }
+  &.blue      { background-color: $blue; }
+  &.redBrown  { background-color: $redBrown; }
 
   padding: $paddingAmt;
 
@@ -171,14 +267,28 @@ footer {
   margin: 20px 0;
 
   .solution {
+    .section {
+      padding: 0 20px;
+    }
+
     .icon, h4, p {
       text-align: center;
+    }
+
+    $icon-width: 60px;
+
+    .icon {
+      img {
+        display: inline-block;
+        padding: 5px 10px;
+        width: $icon-width;
+      }
     }
 
   }
 }
 @mixin banner($h1_width: 650px) {
-  height: 400px;
+  height: 300px;
   position: relative;
   text-align: center;
 
@@ -202,7 +312,12 @@ footer {
 }
 #contact-us-banner {
   @include banner(100%);
-  background: url(/images/home-banner.jpg) no-repeat center center transparent;
+  background: url(/images/contact-us-banner.jpg) no-repeat center center transparent;
+}
+@media (min-width: 900px) {
+  #home-banner, #contact-us-banner {
+    height: 400px;
+  }
 }
 
 #business-cornerstone {
@@ -226,7 +341,7 @@ $tableCellPadding: 1em;
           padding: $tableCellPadding / 2 $tableCellPadding;
 
           &:first-child {
-            background-color: $blue;
+            background-color: $blueDark;
             color: white;
           }
         }

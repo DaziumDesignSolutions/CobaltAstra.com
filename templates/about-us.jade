@@ -21,7 +21,18 @@ block content
         - var content = contents['about-us']['our-approach.md']
         .graybox
           .padded
-            != content.html
+            != contents['about-us']['our-approach-top.md'].html
+            .hpadded
+              .row
+                .col-sm-6
+                  .section
+                    != contents['about-us']['approaches']['our-experience.md'].html
+                    != contents['about-us']['approaches']['our-technology.md'].html
+                .col-sm-6
+                  .section
+                    != contents['about-us']['approaches']['our-understanding.md'].html
+                    != contents['about-us']['approaches']['our-commitment.md'].html
+            != contents['about-us']['our-approach-bottom.md'].html
 
 
       #advanced-technology.content-area
@@ -49,6 +60,6 @@ block content
 
 block footermsg
   .container
-    .heading-box.yellow
+    .heading-box.greenDark
       h3 The Strength of Your Business Lies<br/> in Your Workforce Solutions
 
