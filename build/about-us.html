@@ -8,11 +8,11 @@
     </title>
     <link rel="alternate" href="http://www.cobaltastra.com/feed.xml" type="application/rss+xml" title="Website for Cobalt Astra">
     <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/vendor/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/js/vendor/modernizr-2.8.1.min.js"></script>
     <script src="/js/vendor/turbolinks.js"></script>
     <script src="/js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
     <script src="/js/plugins.js"></script>
     <script src="/js/main.js"></script><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -22,12 +22,25 @@
   <body>
     <header class="header">
       <div class="container">
-        <div id="logo">
-          <h1><a href="http://www.cobaltastra.com"></a></h1>
+        <div class="row">
+          <div class="col-sm-4">
+            <div id="logo">
+              <h1><a href="http://www.cobaltastra.com"></a></h1>
+            </div>
+          </div>
+          <div class="col-sm-8 align-right">
+            <nav id="header-nav">
+              <ul class="list-inline">
+                <li><a href="#">REQUEST A CONSULTATION</a></li>
+                <li><a href="#">PARTNER WITH US</a></li>
+                <li><a href="#">REFER A NEW CLIENT</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
-    <nav role="navigation" class="navbar">
+    <nav id="main-nav" role="navigation" class="navbar">
       <div class="container">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">Home</a>
@@ -63,9 +76,29 @@
             <div class="graybox">
               <div class="padded"><h2 id="our-approach">OUR APPROACH</h2>
 <p><strong>For over 15 years, we’ve been providing human resources solutions, strategic planning and other HR outsourcing services to hundreds of businesses.</strong></p>
-<p><strong>We partner with you to fully understand your business. We tailor our services to meet your needs, your schedule, your company, and your situation. It’s the only way we do things.</strong></p>
+
+                <div class="hpadded">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="section"><h3 id="our-experience-">Our Experience.</h3>
+<p>With over a hundred years of business and HR experience, our leadership team brings advanced knowledge, training, and capability to your organization.</p>
+<h3 id="our-technology-">Our Technology.</h3>
+<p>At Cobalt Astra, we leverage technology to provide access, tools, and resources to you and your employees, making life and business easier.</p>
+
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="section"><h3 id="our-understanding">Our Understanding</h3>
+<p>Our team shares its HR education and training with you - from payroll and reporting requirements to workplace safety and health care reform.</p>
+<h3 id="our-commitment-">Our Commitment.</h3>
+<p>Respect, accessibility, integrity, responsiveness, and reliability are not just words, they are the Cobalt Astra way. We are committed to serving the needs and exceeding the expectations of each and every client.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div><p><strong>We partner with you to fully understand your business. We tailor our services to meet your needs, your schedule, your company, and your situation. It’s the only way we do things.</strong></p>
 <p class="align-right">
-  <a href="http://google.com/"><strong>It’s the Astra Advantage</strong></a>
+  <a href="/about-us/#"><strong>It’s the Astra Advantage</strong></a>
 </p>
 
 
@@ -107,7 +140,7 @@
       </div>
     </main>
     <div class="container">
-      <div class="heading-box yellow">
+      <div class="heading-box greenDark">
         <h3>The Strength of Your Business Lies<br/> in Your Workforce Solutions</h3>
       </div>
     </div>
