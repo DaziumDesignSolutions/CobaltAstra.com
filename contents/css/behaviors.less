@@ -1,0 +1,50 @@
+@import "vendor/prefixer.less";
+
+html.js {
+  .content-area {
+    .transition-property(all);
+    .transition-duration(400ms);
+    opacity: 1;
+
+    &.will-fadein {
+      opacity: 0;
+      .transform(translate(0, -30px));
+    }
+  }
+
+  #solutions-overview {
+    .solution-overview {
+      table {
+        width: 200px;
+
+        &.expanded {
+          width: 100%;
+        }
+
+        td, th {
+          display: none;
+        }
+
+        thead {
+          tr {
+            th:first-child {
+              display: table-cell;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      &:target {
+        table {
+          width: 100% !important;
+
+          td, th {
+            display: table-cell !important;
+          }
+        }
+      }
+    }
+  }
+}
+
