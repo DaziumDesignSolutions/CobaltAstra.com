@@ -106,6 +106,9 @@ p {
 /**
  * General sections
  */
+body {
+  font-size: 16px;
+}
 header {
   background: $headerBg;
   color: $headerTextColor;
@@ -242,6 +245,7 @@ nav#main-nav {
     width: 90%;
     text-align: center;
     margin: 0 auto;
+    line-height: 1.4em;
   }
 
 }
