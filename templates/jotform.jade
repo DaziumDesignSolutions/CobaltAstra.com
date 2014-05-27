@@ -6,5 +6,8 @@ block title
   = page.metadata.title + ' | ' + locals.name
 
 block content
-  div(id=page_id)
-    script(type="text/javascript", src="https://secure.jotformpro.com/jsform/" + jotform_id)
+  div(id=page_id, class="jotform")
+    .container
+      .hpadded
+        h1.title= page.metadata.title
+      script(type="text/javascript", src="https://secure.jotformpro.com/jsform/" + jotform_id)
