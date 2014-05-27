@@ -13,7 +13,8 @@
   "require": {
     "moment": "moment",
     "_": "underscore",
-    "typogr": "typogr"
+    "typogr": "typogr",
+    "slugg": "slugg"
   },
   "jade": {
     "pretty": true
