@@ -9,5 +9,5 @@ block content
   div(id=page_id, class="jotform")
     .container
       .hpadded
-        h1.title= page.metadata.title
+        h1.title= page.metadata.title.toUpperCase()
       script(type="text/javascript", src="https://secure.jotformpro.com/jsform/" + jotform_id)

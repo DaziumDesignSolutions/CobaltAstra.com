@@ -11,42 +11,39 @@ block content
 
       #expert-knowledge.content-area
         - var content = contents['about-us']['expert-knowledge.md']
-        .hpadded
-          article.row
-            .col-sm-8!= content.html
-            aside.col-sm-4
-              //- img.img-responsive(src='/about-us/' + content.metadata.aside.image)
-              p
-                strong Expert knowledge text or graphic here
+        article.row
+          .col-sm-8!= content.html
+          aside.col-sm-4
+            //- img.img-responsive(src='/about-us/' + content.metadata.aside.image)
+            p
+              strong Expert knowledge text or graphic here
 
       #our-approach.content-area
         - var content = contents['about-us']['our-approach.md']
         .graybox
           .padded
             != contents['about-us']['our-approach-top.md'].html
-            .hpadded
-              .row
-                .col-sm-6
-                  .section
-                    != contents['about-us']['approaches']['our-experience.md'].html
-                    != contents['about-us']['approaches']['our-technology.md'].html
-                .col-sm-6
-                  .section
-                    != contents['about-us']['approaches']['our-understanding.md'].html
-                    != contents['about-us']['approaches']['our-commitment.md'].html
+            .row
+              .col-sm-6
+                .section
+                  != contents['about-us']['approaches']['our-experience.md'].html
+                  != contents['about-us']['approaches']['our-technology.md'].html
+              .col-sm-6
+                .section
+                  != contents['about-us']['approaches']['our-understanding.md'].html
+                  != contents['about-us']['approaches']['our-commitment.md'].html
             != contents['about-us']['our-approach-bottom.md'].html
 
 
       #advanced-technology.content-area
         - var content = contents['about-us']['advanced-technology.md']
-        .hpadded
-          article.row
-            .col-sm-8!= content.html
-            aside.col-sm-4
-              p(style='margin-top: 70px;')
-                //- img.img-responsive(src='/about-us/' + content.metadata.aside.image)
-              - var aside_message = contents['about-us'][content.metadata.aside.message].html
-              p!= aside_message
+        article.row
+          .col-sm-8!= content.html
+          aside.col-sm-4
+            p(style='margin-top: 70px;')
+              //- img.img-responsive(src='/about-us/' + content.metadata.aside.image)
+            - var aside_message = contents['about-us'][content.metadata.aside.message].html
+            p!= aside_message
 
       #trusted-partnerships.content-area
         - var content = contents['about-us']['trusted-partnerships.md']

@@ -2,7 +2,7 @@
 
 ### HR Services
 
-Select from our comprehensive suite of HR services and tools and maintain a personalized touch with your employees.
+**Select from our comprehensive suite of HR services and tools and maintain a personalized touch with your employees.**
 
 <table>
   <thead>

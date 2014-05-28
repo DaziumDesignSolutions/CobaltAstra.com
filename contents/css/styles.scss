@@ -33,6 +33,7 @@ $contentTextColor: $grayDark;
  * Layout related vars
  */
 $paddingAmt: 40px;
+$paddingInnerAmt: 20px;
 $contentAreaMarginAmt: 40px;
 
 
@@ -100,6 +101,8 @@ p {
 .blueDark-bg    { background-color: $blueDark; }
 .blue-bg        { background-color: $blue; }
 .redBrown-bg    { background-color: $redBrown; }
+
+.blueDark-text    { color: $blueDark; }
 
 
 
@@ -213,7 +216,8 @@ nav#main-nav {
   background-color: $grayLight;
 
   .section {
-    padding: $paddingAmt;
+    padding-top: $paddingInnerAmt;
+    padding-bottom: $paddingInnerAmt;
   }
 }
 .hpadded {
@@ -399,7 +403,7 @@ $tableCellPadding: 1em;
 
       thead {
         th:first-child {
-          width: 50%;
+          width: 30%;
         }
       }
 
@@ -425,11 +429,10 @@ $tableCellPadding: 1em;
   }
 
   p {
-    font-size: 1.2em;
     margin-bottom: 0.75em;
   }
 }
-#about-us {
+#solutions-overview, #about-us {
   strong {
     font-weight: 400;
     font-size: 1.4em;

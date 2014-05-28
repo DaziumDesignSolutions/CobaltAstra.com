@@ -2,7 +2,7 @@
 
 ### HR Outsourcing
 
-Our outsourcing solutions work for businesses of all sizes. Invest in us, and you’ll have more time to invest in your clients, growing, protecting and nurturing your business.
+**Our outsourcing solutions work for businesses of all sizes. Invest in us, and you’ll have more time to invest in your clients, growing, protecting and nurturing your business.**
 
 <table>
   <thead>

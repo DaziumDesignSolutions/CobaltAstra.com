@@ -15,7 +15,7 @@ block content
                 img.greenDark-bg(src=contents.images['icon-enabling.png'].url)
               .content!= contents.home['solutions-overview']['1-enabling.md'].html
               p
-                a.btn.btn-sm.btn-primary(href='/our-solutions.html#enabling', role='button') HR SERVICES
+                a.btn.btn-primary(href='/our-solutions.html#enabling', role='button') HR SERVICES
 
           .solution.col-sm-4
             .section
@@ -23,7 +23,7 @@ block content
                 img.redBrown-bg(src=contents.images['icon-growing.png'].url)
               .content!= contents.home['solutions-overview']['2-growing.md'].html
               p
-                a.btn.btn-sm.btn-primary(href='/our-solutions.html#growing', role='button') HR CONSULTING
+                a.btn.btn-primary(href='/our-solutions.html#growing', role='button') HR CONSULTING
 
           .solution.col-sm-4
             .section
@@ -31,7 +31,7 @@ block content
                 img.blueDark-bg(src=contents.images['icon-empowering.png'].url)
               .content!= contents.home['solutions-overview']['3-empowering.md'].html
               p
-                a.btn.btn-sm.btn-primary(href='/our-solutions.html#empowering', role='button') HR OUTSOURCING
+                a.btn.btn-primary(href='/our-solutions.html#empowering', role='button') HR OUTSOURCING
 
     #home-banner.content-area
       != contents.home['h1-title.md'].html
@@ -41,17 +41,15 @@ block content
         .section
           != contents.home['business-cornerstone.md'].html
 
-          .hpadded
-            .row
-              .col-sm-6
-                != contents.home['business-cornerstone']['col-left.md'].html
+          .row
+            .col-sm-6(style='padding-right: 30px')
+              != contents.home['business-cornerstone']['col-left.md'].html
 
-              .col-sm-6
-                != contents.home['business-cornerstone']['col-right.md'].html
+            .col-sm-6(style='padding-left: 30px')
+              != contents.home['business-cornerstone']['col-right.md'].html
 
-
-          p.align-right(style='margin-top: 20px;')
-            a(href='#') Complete HR outsourcing solution.
+          p.blueDark-text.align-right(style='margin-top: 20px;')
+            strong Complete HR outsourcing solution.
 
 block footermsg
   .container

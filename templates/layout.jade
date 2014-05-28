@@ -19,7 +19,7 @@ html.no-js(lang='en')
       script(src='/js/vendor/turbolinks.js')
       script(src='/js/vendor/jquery-1.11.0.min.js')
       script(src='/js/vendor/bootstrap.min.js')
-      script(src='/js/vendor/equalize.min.js')
+      //- script(src='/js/vendor/equalize.min.js')
       script(src='/js/plugins.js')
       script(src='/js/main.js')
       <!--[if lt IE 9]>
@@ -84,12 +84,12 @@ html.no-js(lang='en')
       .container
         block footer
           .row
-            .col-sm-6
+            .col-sm-4
               p
                 | CONNECT
-                a(href='#'): img(src=contents.images['social-linkedin.png'].url, alt='LinkedIn', style='margin: 0 0.5em')
+                a(href='https://www.linkedin.com/company/cobalt-astra', target='_blank'): img(src=contents.images['social-linkedin.png'].url, alt='LinkedIn', style='margin: 0 0.5em')
                 | WITH US
-            .col-sm-6
+            .col-sm-8
               .align-right!= contents['footer.md'].html
 
       //-

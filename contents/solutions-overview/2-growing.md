@@ -2,7 +2,7 @@
 
 ### HR Consulting
 
-We partner with you to develop an organizational “people” strategy which engages your employees, increases productivity by reducing expenses/time and aligns with the long term vision of your business.
+**We partner with you to develop an organizational “people” strategy which engages your employees, increases productivity by reducing expenses/time and aligns with the long term vision of your business.**
 
 <table>
   <thead>
