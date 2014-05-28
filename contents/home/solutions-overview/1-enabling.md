@@ -1,3 +1,3 @@
-#### ENABLING YOUR BUSINESS
+#### ENABLING BUSINESS
 
-We take care of basic HR functions from payroll to benefit administration to workers’ compensation.
+Fundamental services including payroll, benefits and workers’ compensation

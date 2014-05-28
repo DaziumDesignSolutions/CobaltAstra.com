@@ -1,3 +1,3 @@
-#### GROWING YOUR BUSINESS
+#### GROWING BUSINESS
 
-You need to attract talent, develop<br/> skills and reward employees preparing you for growth.
+Expansion resources through people talent, new skills and rewarding employees

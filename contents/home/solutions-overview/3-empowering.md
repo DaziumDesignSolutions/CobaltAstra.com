@@ -1,3 +1,3 @@
-#### EMPOWERING YOUR BUSINESS
+#### EMPOWERING BUSINESS
 
-You keep your focus on<br/> your business and we’ll be your HR department.
+Complete support utilizing technology and our integrated suite of HR resources
