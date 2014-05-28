@@ -5,4 +5,4 @@ Erin Neuburger or Rachel Gast<br />
 Local: (913) 378-1910<br />
 Toll Free: (888) 842-5520<br />
 Monday - Friday, 8:00 - 5:00 p.m. CST<br />
-<a href="info@cobaltastra.com">info@cobaltastra.com</a>
+<a href="mailto:info@cobaltastra.com">info@cobaltastra.com</a>
