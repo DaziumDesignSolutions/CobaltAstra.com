@@ -1,6 +1,6 @@
 ---
 aside:
-  image: graph-tech-platform.png
+  image: graph-technology.png
   message: advanced-technology-message.md
 ---
 

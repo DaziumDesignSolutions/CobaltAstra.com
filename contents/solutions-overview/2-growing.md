@@ -17,6 +17,7 @@
       <td rowspan="6">
         <p>Your business is growing and so are your human resources needs. Cobalt Astra can help you hire the right talent, manage and develop this talent and even reward them as your business grows profitably.</p>
         <p>Our team provides expertise in all aspects of recruiting, workforce planning, leadership/employee development, performance management and compensation design and administration.</p>
+        <p><img src="/solutions-overview/photo3.jpg" /></p>
       </td>
     </tr>
     <tr>

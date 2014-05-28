@@ -17,6 +17,7 @@
       <td rowspan="4">
         <p>We can make your workforce more effective through our fully integrated HR outsourcing service model. Many business owners decide that HR is not their core business competency and engage Cobalt Astra to be the “HR department” for their business. We provide a robust e-HR technology platform that allows you and your employees to “self-serve” with many of our HR programs.</p>
         <p>We couple this technology with our team who provides the personal and customized HR services solution. Cobalt Astra can connect with you via our technology platform, by phone or on-site to accommodate your business HR outsourcing needs.</p>
+        <p><img src="/solutions-overview/photo2.jpg" /></p>
       </td>
     </tr>
     <tr>

@@ -1,6 +1,6 @@
 ---
 aside:
-  image: graph-hr-capabilities.png
+  image: graph-experience.png
 ---
 
 ## EXPERT KNOWLEDGE

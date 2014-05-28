@@ -17,6 +17,7 @@
       <td rowspan="5">
         <p>Your company needs payroll, benefits administration, workers’ compensation, HR compliance, and/or risk management. Providing these basic functions for your employees is time-consuming but essential.</p>
         <p>Partnering with us allows you more time to focus on your core business without neglecting your employees. We provide personal assistance for all your human resources functions either in-person, on-line or over the phone.</p>
+        <p><img src="/solutions-overview/photo1.jpg" /></p>
       </td>
     </tr>
     <tr>
