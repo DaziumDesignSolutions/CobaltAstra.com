@@ -84,7 +84,13 @@ p {
   float: right;
   margin: 0 0 10px 10px;
 }
-.align-center { text-align: center; }
+.align-center {
+  text-align: center;
+
+  .img-responsive {
+    display: inline-block;
+  }
+}
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-justify { text-align: justify; }
