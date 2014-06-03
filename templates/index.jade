@@ -38,18 +38,24 @@ block content
 
     .container
       #business-cornerstone.content-area
-        .section
-          != contents.home['business-cornerstone.md'].html
+        .graybox
+          .padded
+            != contents.home['business-cornerstone.md'].html
 
-          .row
-            .col-sm-6(style='padding-right: 30px')
-              != contents.home['business-cornerstone']['col-left.md'].html
+            .vpadded
+              .row
+                .col-sm-4
+                  != contents.home['business-cornerstone']['col-left.md'].html
 
-            .col-sm-6(style='padding-left: 30px')
-              != contents.home['business-cornerstone']['col-right.md'].html
+                .col-sm-4
+                  .align-center
+                    img.img-responsive(data-src='holder.js/300x300/vine')
 
-          p.blueDark-text.align-right(style='margin-top: 20px;')
-            strong Complete HR Outsourcing Solution.
+                .col-sm-4
+                  != contents.home['business-cornerstone']['col-right.md'].html
+
+              p.blueDark-text.align-right(style='margin-top: 20px;')
+                strong Complete HR Outsourcing Solution.
 
 block footermsg
   .container
