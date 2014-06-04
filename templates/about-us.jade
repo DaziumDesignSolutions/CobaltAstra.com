@@ -7,51 +7,70 @@ block title
 block content
   #about-us
     .container
-      - var about_us_content = contents['about-us']._.pages
+      - var about_us = contents['about-us']
+      - var partnerships = about_us['trusted-partnerships']
 
-      #expert-knowledge.content-area
-        - var content = contents['about-us']['expert-knowledge.md']
-        article.row
-          .col-sm-7!= content.html
-          aside.col-sm-5(style='margin-top: 25px')
-            img.img-responsive(src='/about-us/' + content.metadata.aside.image)
+      #knowledge-technology.content-area
+        - var expert_knowledge = about_us['expert-knowledge.md']
+        - var adv_technology   = about_us['advanced-technology.md']
+        .graybox
+          .padded
+
+            article
+              .row
+                .col-sm-6!= expert_knowledge.html
+                .col-sm-6!= adv_technology.html
+
+              .vpadded(style='padding-bottom: 0')
+                .row
+                  .col-sm-3
+                    .solution.enabling
+                      .align-right!= about_us.lists['hr-services.md'].html
+                  .col-sm-6
+                    .solution.growing
+                      .align-center!= about_us.lists['hr-outsourcing.md'].html
+                  .col-sm-3
+                    .solution.empowering
+                      .align-left!= about_us.lists['hr-consulting.md'].html
+
+      #about-us-banner.content-area
+        != about_us['h1-title.md'].html
 
       #our-approach.content-area
         - var content = contents['about-us']['our-approach.md']
+        - var approaches = about_us.approaches
         .graybox
           .padded
-            != contents['about-us']['our-approach-top.md'].html
-            .row
-              .col-sm-6
-                .section
-                  != contents['about-us']['approaches']['our-experience.md'].html
-                  != contents['about-us']['approaches']['our-technology.md'].html
-              .col-sm-6
-                .section
-                  != contents['about-us']['approaches']['our-understanding.md'].html
-                  != contents['about-us']['approaches']['our-commitment.md'].html
-            != contents['about-us']['our-approach-bottom.md'].html
+            != about_us['our-approach-top.md'].html
 
-      #advanced-technology.content-area
-        - var content = contents['about-us']['advanced-technology.md']
-        article.row
-          .col-sm-7!= content.html
-          aside.col-sm-5
-            p(style='margin-top: 70px;')
-              img.img-responsive(src='/about-us/' + content.metadata.aside.image)
-            //- - var aside_message = contents['about-us'][content.metadata.aside.message].html
-            //- p!= aside_message
+            .vpadded(style='padding-bottom: 0')
+              .row
+                .col-sm-4
+                  .align-right
+                    .approach.experience!= approaches['experience.md'].html
+                    .approach.technology!= approaches['technology.md'].html
+                .col-sm-4
+                  .align-center
+                    img.img-responsive(src=about_us['choose-astra.png'].url)
+                .col-sm-4
+                  .approach.collaboration!= approaches['collaboration.md'].html
+                  .approach.commitment!= approaches['commitment.md'].html
 
       #trusted-partnerships.content-area
-        - var content = contents['about-us']['trusted-partnerships.md']
-        - var content_left  = contents['about-us']['trusted-partnerships']['part-of-cobalt-family.md']
-        - var content_right = contents['about-us']['trusted-partnerships']['our-solutions-work.md']
-        .graybox
-          .padded
-            != content.html
-            .row
-              .col-sm-6!= content_left.html
-              .col-sm-6!= content_right.html
+        - var content = about_us['trusted-partnerships.md']
+
+        - var partnerships = about_us['trusted-partnerships']
+        - var services = partnerships['services-spectrum.md']
+        - var partners = partnerships['channel-partners.md']
+
+        != content.html
+        .row
+          .col-sm-6
+            p: img.img-responsive(src=partnerships[services.metadata.image].url alt='Services Spectrum')
+            != services.html
+          .col-sm-6
+            p: img.img-responsive(src=partnerships[partners.metadata.image].url alt='Channel Partners')
+            != partners.html
 
 
 block footermsg

@@ -7,11 +7,22 @@ $grayLighter: #F6F6F6;
 $grayDark: #58595B;
 $grayDarker: #1A1919;
 
-$greenDark: #697146;
 $brown: #944D16;
-$blueDark: #062d5d;
 $blue: #0285C8;
-$redBrown: #6d2e38;
+
+/* Solutions and approach colors */
+$greenDark: #626A46;
+$blueDark: #143356;
+$redBrown: #5C2D33;
+
+$solEnabling:   $greenDark;
+$solGrowing:    $redBrown;
+$solEmpowering: $blueDark;
+
+$aprExperience:    $blueDark;
+$aprTechnology:    $greenDark;
+$aprCollaboration: $redBrown;
+$aprCommitment:   $blue;
 
 
 /**
@@ -278,15 +289,48 @@ footer {
     background: $footerInnerBg;
   }
 }
+.icon {
+  &.enabling   img { background-color: $solEnabling; }
+  &.growing    img { background-color: $solGrowing; }
+  &.empowering img { background-color: $solEmpowering; }
+}
 
 
 /**
  * Content
  */
+.solution {
+  &.enabling {
+    h1, h2, h3, h4, h5, h6 { color: $solEnabling; }
+  }
+  &.growing {
+    h1, h2, h3, h4, h5, h6 { color: $solGrowing; }
+  }
+  &.empowering {
+    h1, h2, h3, h4, h5, h6 { color: $solEmpowering; }
+  }
+}
+
+.approach {
+  &.experience {
+    h1, h2, h3, h4, h5, h6 { color: $aprExperience; }
+  }
+  &.technology {
+    h1, h2, h3, h4, h5, h6 { color: $aprTechnology; }
+  }
+  &.collaboration {
+    h1, h2, h3, h4, h5, h6 { color: $aprCollaboration; }
+  }
+  &.Commitment {
+    h1, h2, h3, h4, h5, h6 { color: $aprCommitment; }
+  }
+}
+
 #home-solutions-overview {
   margin: 20px 0;
 
   .solution {
+
     .section {
       padding: 0 20px;
     }
@@ -364,6 +408,10 @@ footer {
   @include banner;
   background: url(/images/home-banner.jpg) no-repeat center center transparent;
 }
+#about-us-banner {
+  @include banner;
+  background: url(/images/home-banner.jpg) no-repeat center center transparent;
+}
 #contact-us-banner {
   @include banner(100%);
   background: url(/images/contact-us-banner.jpg) no-repeat center center transparent;
@@ -438,10 +486,38 @@ $tableCellPadding: 1em;
     margin-bottom: 0.75em;
   }
 }
+
 #content {
   strong {
     font-weight: 400;
     font-size: 1.4em;
+  }
+}
+
+#knowledge-technology {
+  .solution {
+    ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #knowledge-technology {
+    .solution {
+      .align-right, .align-center { text-align: left; }
+      margin-bottom: 2em;
+
+      &.growing {
+        img {
+          display: none;
+        }
+      }
+    }
   }
 }
 
