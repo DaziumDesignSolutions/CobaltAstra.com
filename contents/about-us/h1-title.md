@@ -1,1 +1,1 @@
-# We partner with you to fully understand your business
+# We Partner With You to Fully Understand Your Business
