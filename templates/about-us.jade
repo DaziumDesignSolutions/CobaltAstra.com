@@ -22,15 +22,18 @@ block content
                 .col-sm-6!= adv_technology.html
 
               .vpadded(style='padding-bottom: 0')
+                .hidden-md.hidden-lg
+                  img.img-responsive(src='/about-us/technology-platform.png', alt='Technology Platform')
+
                 .row
-                  .col-sm-3
+                  .col-md-3
                     .solution.enabling
                       .align-right!= about_us.lists['hr-services.md'].html
-                  .col-sm-6
-                    .solution.growing
-                      .align-center!= about_us.lists['hr-outsourcing.md'].html
-                  .col-sm-3
+                  .col-md-6
                     .solution.empowering
+                      .align-center!= about_us.lists['hr-outsourcing.md'].html
+                  .col-md-3
+                    .solution.growing
                       .align-left!= about_us.lists['hr-consulting.md'].html
 
       #about-us-banner.content-area

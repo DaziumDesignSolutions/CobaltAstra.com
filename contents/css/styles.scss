@@ -511,13 +511,13 @@ footer {
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #knowledge-technology {
     .solution {
       .align-right, .align-center { text-align: left; }
       margin-bottom: 2em;
 
-      &.growing {
+      &.empowering {
         img {
           display: none;
         }
