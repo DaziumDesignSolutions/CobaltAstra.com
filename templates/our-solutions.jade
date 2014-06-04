@@ -15,11 +15,11 @@ block content
   - }).value();
 
   #our-solutions
+
+    #our-solutions-banner.content-area
+      != contents['solutions']['h1-title.md'].html
+
     .container
-
-      #our-solutions-banner.content-area
-        != contents['solutions']['h1-title.md'].html
-
       .solutions
         each solution in solutions
           include partials/solution

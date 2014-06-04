@@ -460,6 +460,8 @@ footer {
       }
 
       .features {
+        margin-top: 2em;
+
         .feature {
           margin-bottom: 1em;
         }
@@ -512,7 +514,7 @@ footer {
   }
 }
 @media (max-width: 991px) {
-  #home-index, #knowledge-technology {
+  #home-index, #our-approach, #knowledge-technology {
     .align-right { text-align: left; }
   }
   #knowledge-technology {
