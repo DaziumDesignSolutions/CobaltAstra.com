@@ -8,8 +8,8 @@
 .content-area.solution(class=solution.metadata.class)
   header
     .icon
-      - var iconDimensions = 35
-      img(src='/images/' + solution.metadata.icon, width=iconDimensions, alt='')
+      - var solIconDimensions = 60
+      img(src='/images/' + solution.metadata.icon, width=solIconDimensions, alt=name)
     h2.title= solution.metadata.title
 
   .row
@@ -21,12 +21,13 @@
           each feature in features
             li.feature
               .row
-                .col-sm-1
+                .col-sm-2
                   .icon
                     - var icon_file = feature.metadata.icon
+                    - var iconDimensions = 60
                     - var icon_alt  = icon_file.match(/^(.*?)\.(png|jpg)$/)[1].split('-').join(' ')
-                    img(src='/images/solution-icons/' + icon_file, width=iconDimensions + 15, alt=icon_alt)
-                .col-sm-11
+                    img(src='/images/solution-icons/' + icon_file, width=iconDimensions, alt=icon_alt)
+                .col-sm-10
                   != feature.html
 
     .col-sm-4

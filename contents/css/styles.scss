@@ -441,7 +441,7 @@ footer {
 
       header {
         $solHeaderHeight: 70px;
-        $iconHeight: 42px;
+        $iconHeight: 60px;
 
         color: white;
         height: $solHeaderHeight;
@@ -512,10 +512,14 @@ footer {
   }
 }
 @media (max-width: 991px) {
+  #home-index, #knowledge-technology {
+    .align-right { text-align: left; }
+  }
   #knowledge-technology {
     .solution {
-      .align-right, .align-center { text-align: left; }
       margin-bottom: 2em;
+
+      .align-center { text-align: left; }
 
       &.empowering {
         img {
