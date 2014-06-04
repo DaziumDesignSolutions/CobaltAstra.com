@@ -1,0 +1,34 @@
+- var name = solution.filepath.relative.match(/solutions[\/]\d+-(.*?)\.md$/)[1]
+- var features = _.chain(solution.parent[name]._.pages).sortBy(function(item) {
+-   var ptn = RegExp('solutions/' + name + '/' + '(\\d+)-.*')
+-   var match = item.filepath.relative.match(ptn)
+-   return parseInt(match[1])
+- }).value();
+
+.content-area.solution(class=solution.metadata.class)
+  header
+    .icon
+      - var iconDimensions = 35
+      img(src='/images/' + solution.metadata.icon, width=iconDimensions, alt='')
+    h2.title= solution.metadata.title
+
+  .row
+    .col-sm-8
+      article.padded
+        != solution.html
+
+        ul.list-unstyled.features
+          each feature in features
+            li.feature
+              .row
+                .col-sm-1
+                  .icon
+                    - var icon_file = feature.metadata.icon
+                    - var icon_alt  = icon_file.match(/^(.*?)\.(png|jpg)$/)[1].split('-').join(' ')
+                    img(src='/images/solution-icons/' + icon_file, width=iconDimensions, height=iconDimensions, alt=icon_alt)
+                .col-sm-11
+                  != feature.html
+
+    .col-sm-4
+      img.img-responsive(src='/solutions/' + name + '/' + solution.metadata.image, alt=name)
+

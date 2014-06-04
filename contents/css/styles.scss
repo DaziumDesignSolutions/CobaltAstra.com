@@ -299,18 +299,6 @@ footer {
 /**
  * Content
  */
-.solution {
-  &.enabling {
-    h1, h2, h3, h4, h5, h6 { color: $solEnabling; }
-  }
-  &.growing {
-    h1, h2, h3, h4, h5, h6 { color: $solGrowing; }
-  }
-  &.empowering {
-    h1, h2, h3, h4, h5, h6 { color: $solEmpowering; }
-  }
-}
-
 .approach {
   &.experience {
     h1, h2, h3, h4, h5, h6 { color: $aprExperience; }
@@ -412,12 +400,16 @@ footer {
   @include banner;
   background: url(/images/home-banner.jpg) no-repeat center center transparent;
 }
+#our-solutions-banner {
+  @include banner;
+  background: url(/images/home-banner.jpg) no-repeat center center transparent;
+}
 #contact-us-banner {
   @include banner(100%);
   background: url(/images/contact-us-banner.jpg) no-repeat center center transparent;
 }
 @media (min-width: 900px) {
-  #home-banner, #contact-us-banner {
+  #home-banner, #our-solutions-banner, #about-us-banner, #contact-us-banner {
     height: 400px;
   }
 }
@@ -426,64 +418,77 @@ footer {
   margin: 40px 0;
 }
 
-$tableCellPadding: 1em;
-
-#solutions-overview {
-
-  .solution-overview {
-    background: $grayLight;
-    margin-bottom: $contentAreaMarginAmt;
-
-    table {
-      background-color: white;
-      border: 1px solid $grayDark;
-
-      thead {
-        th {
-          padding: $tableCellPadding / 2 $tableCellPadding;
-
-          &:first-child {
-            background-color: $blueDark;
-            color: white;
-          }
-        }
-      }
-
-      tr {
-        td {
-          width: 25%;
-        }
-      }
-
-      thead {
-        th:first-child {
-          width: 30%;
-        }
-      }
-
-      td {
-        padding: $tableCellPadding / 2 $tableCellPadding;
-        vertical-align: top;
-      }
-
-      th, td {
-        border-right: 1px solid $grayDark;
-        border-bottom: 1px solid $grayDark;
-      }
+#about-us {
+  .solution {
+    &.enabling {
+      h1, h2, h3, h4, h5, h6 { color: $solEnabling; }
+    }
+    &.growing {
+      h1, h2, h3, h4, h5, h6 { color: $solGrowing; }
+    }
+    &.empowering {
+      h1, h2, h3, h4, h5, h6 { color: $solEmpowering; }
     }
   }
+}
 
-  h2 {
-    margin-top: 0;
-  }
+#our-solutions {
+  .solutions {
+    .solution {
+      background-color: $grayLight;
+      color: black;
+      margin-bottom: 40px;
 
-  h3 {
-    font-style: italic;
-    margin-bottom: 0.75em;
-  }
+      header {
+        $solHeaderHeight: 70px;
+        $iconHeight: 42px;
 
-  p {
-    margin-bottom: 0.75em;
+        color: white;
+        height: $solHeaderHeight;
+        overflow: hidden;
+
+        .icon {
+          float: left;
+          padding: ($solHeaderHeight - $iconHeight) / 2;
+        }
+
+        .title {
+          line-height: $solHeaderHeight;
+          padding-left: $solHeaderHeight + 10;
+          margin: 0;
+        }
+      }
+
+      .features {
+        .feature {
+          margin-bottom: 1em;
+        }
+      }
+
+      &.enabling {
+        header {
+          background-color: lighten($solEnabling, 5%);
+
+          .icon { background-color: $solEnabling; }
+        }
+      }
+
+      &.growing {
+        header {
+          background-color: lighten($solGrowing, 5%);
+
+          .icon { background-color: $solGrowing; }
+        }
+      }
+
+      &.empowering {
+        header {
+          background-color: lighten($solEmpowering, 5%);
+
+          .icon { background-color: $solEmpowering; }
+        }
+      }
+    }
   }
 }
 

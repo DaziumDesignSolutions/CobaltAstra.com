@@ -5,16 +5,24 @@ block title
   = locals.name
 
 block content
+
+  - var solutions = _.chain(contents['solutions']._.pages).filter(function(item) {
+  -   var match = item.filepath.relative.match(/solutions[\/](\d+)-(.*?)\.md/)
+  -   return match
+  - }).sortBy(function(item) {
+  -   var match = item.filepath.relative.match(/solutions[\/](\d+)-(.*?)\.md/)
+  -   return match ? parseInt(match[1]) : 0;
+  - }).value();
+
   #our-solutions
     .container
-      - var solutions = _.chain(contents['solutions-overview']._.pages).sortBy(function(item) {
-      -   var match = item.filepath.relative.match(/solutions-overview[\/](\d+)-(\w+?)\.md/)
-      -   return parseInt(match[1]);
-      - }).value();
 
-      #solutions-overview
+      #our-solutions-banner.content-area
+        != contents['solutions']['h1-title.md'].html
+
+      .solutions
         each solution in solutions
-          include partials/solution-overview
+          include partials/solution
 
 block footermsg
   .container
