@@ -12,7 +12,8 @@ $(function() {
     });
   });
 
-  $(document).on('click', '#our-solutions .solutions .solution header', function(e) {
+
+  function solutionToggleHandler(e) {
     var anim_delay = 400,
         $solution  = $(this).parents('.solution'),
         $compacted = $solution.find('.solution-compacted'),
@@ -27,6 +28,21 @@ $(function() {
     else {
       setTimeout(function() { $expanded.hide(); }, anim_delay);
       $solution.find('header .expand').text('EXPAND');
+    }
+  }
+
+  $(document).on('click', '#our-solutions .solutions .solution header', solutionToggleHandler);
+
+  $(document).on('page:update', function(e) {
+    console.log('document.location');
+    console.log(document.location);
+    var sol_hashes = ['#hr-services', '#hr-consulting', '#hr-outsourcing'];
+
+    if (sol_hashes.indexOf(document.location.hash) >= 0) {
+      var id = document.location.hash.split('#')[1];
+      var $solution = $('body #our-solutions .solution[name='+id+']');
+      $solution.addClass('expanded');
+      $solution.find('header .expand').text('COLLAPSE');
     }
   });
 
