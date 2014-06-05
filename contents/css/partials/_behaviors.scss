@@ -51,10 +51,13 @@ html.js {
     .solutions {
       header {
         cursor: pointer;
+
+        .expand {
+          display: block;
+        }
       }
 
       article {
-        min-height: 250px;
         position: relative;
       }
 
@@ -62,6 +65,8 @@ html.js {
         overflow: hidden;
         position: absolute;
         width: 100%;
+        top: 0;
+        left: 0;
         -webkit-transform: translate(-30px, 0);
         transition-property: opacity, transform;
         transition-duration: $anim-duration;
@@ -76,6 +81,7 @@ html.js {
         -webkit-transform: translate(0, 0);
         display: block;
         opacity: 1;
+        position: static;
       }
 
       .solution {

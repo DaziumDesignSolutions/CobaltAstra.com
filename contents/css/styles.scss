@@ -446,6 +446,18 @@ footer {
         color: white;
         height: $solHeaderHeight;
         overflow: hidden;
+        position: relative;
+
+        .expand {
+          display: none;
+          position: absolute;
+          top: 50%;
+          right: 30px;
+          line-height: 12px;
+          margin-top: -6px;
+          float: right;
+          font-size: 12px;
+        }
 
         .icon {
           float: left;
