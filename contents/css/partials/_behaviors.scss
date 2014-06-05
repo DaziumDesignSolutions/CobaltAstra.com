@@ -44,5 +44,56 @@ html.js {
       }
     }
   }
+
+  #our-solutions {
+    $anim-duration: 400ms;
+
+    .solutions {
+      header {
+        cursor: pointer;
+      }
+
+      article {
+        min-height: 250px;
+        position: relative;
+      }
+
+      .solution-expanded, .solution-compacted {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        -webkit-transform: translate(-30px, 0);
+        transition-property: opacity, transform;
+        transition-duration: $anim-duration;
+        /* transition-delay: $anim-duration * 1.01; */
+      }
+
+      .solution-expanded {
+        opacity: 0;
+      }
+
+      .solution-compacted {
+        -webkit-transform: translate(0, 0);
+        display: block;
+        opacity: 1;
+      }
+
+      .solution {
+        &.expanded {
+          .solution-compacted {
+            -webkit-transform: translate(-30px, 0);
+            position: absolute;
+            opacity: 0;
+          }
+
+          .solution-expanded {
+            position: static;
+            -webkit-transform: translate(0, 0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
 

@@ -459,6 +459,30 @@ footer {
         }
       }
 
+      .solution-compacted {
+        display: none;
+
+        .feature {
+          width: 170px;
+          display: inline-block;
+          margin-left: 10px;
+          vertical-align: top;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          .title {
+            * { display: none; }
+
+            h1, h2, h3, h4, h5, h6 {
+              display: block;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
       .features {
         margin-top: 2em;
 
@@ -532,4 +556,4 @@ footer {
   }
 }
 
-/* @import "partials/behaviors"; */
+@import "partials/behaviors";
