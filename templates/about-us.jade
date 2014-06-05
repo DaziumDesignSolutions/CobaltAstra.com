@@ -36,8 +36,9 @@ block content
                     .solution.growing
                       .align-left!= about_us.lists['hr-consulting.md'].html
 
-    #about-us-banner.content-area
-      != about_us['h1-title.md'].html
+    #about-us-banner.content-area.hidden-xs!= about_us['h1-title.md'].html
+
+    .container.visible-xs!= about_us['h1-title.md'].html
 
     .container
       #our-approach.content-area

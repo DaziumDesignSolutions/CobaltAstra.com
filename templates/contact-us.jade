@@ -7,8 +7,9 @@ block title
 block content
   #contact-us
 
-    #contact-us-banner.content-area
-      h1 Expert Knowledge. Advanced Technology.<br /> Strategic Partnerships.
+    #contact-us-banner.content-area.hidden-xs!= contents['contact-us-h1-title.md'].html
+
+    .container.visible-xs!= contents['contact-us-h1-title.md'].html
 
     .container
       .content-area

@@ -33,8 +33,9 @@ block content
               p
                 a.btn.btn-primary(href='/our-solutions.html#empowering', role='button') HR OUTSOURCING
 
-    #home-banner.content-area
-      != contents.home['h1-title.md'].html
+    #home-banner.content-area.hidden-xs!= contents.home['h1-title.md'].html
+
+    .container.visible-xs!= contents.home['h1-title.md'].html
 
     .container
       #business-cornerstone.content-area

@@ -16,8 +16,10 @@ block content
 
   #our-solutions
 
-    #our-solutions-banner.content-area
+    #our-solutions-banner.content-area.hidden-xs
       != contents['solutions']['h1-title.md'].html
+
+    .container.visible-xs!= contents['solutions']['h1-title.md'].html
 
     .container
       .solutions
