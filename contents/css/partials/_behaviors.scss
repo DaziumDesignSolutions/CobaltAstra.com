@@ -1,3 +1,5 @@
+@import "variables";
+
 html.js {
   .content-area {
     transition-property: all;
@@ -112,6 +114,7 @@ html.js {
           &, .feature-inner, .icon, .content p {
             transition-property: all;
             transition-duration: $anim-duration;
+            transition-delay: 100ms;
           }
 
           .content {

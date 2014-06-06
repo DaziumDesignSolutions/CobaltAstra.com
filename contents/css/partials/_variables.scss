@@ -1,0 +1,51 @@
+/**
+ * Color palette
+ */
+$gray: #E6E7E8;
+$grayLight: #EFEFF0;
+$grayLighter: #F6F6F6;
+$grayDark: #58595B;
+$grayDarker: #1A1919;
+
+$brown: #944D16;
+$blue: #0285C8;
+
+/* Solutions and approach colors */
+$greenDark: #626A46;
+$blueDark: #143356;
+$redBrown: #5C2D33;
+
+$solEnabling:   $greenDark;
+$solGrowing:    $redBrown;
+$solEmpowering: $blueDark;
+
+$aprExperience:    $blueDark;
+$aprTechnology:    $greenDark;
+$aprCollaboration: $redBrown;
+$aprCommitment:   $blue;
+
+
+/**
+ * Color palette assignment
+ */
+$headerBg: $grayLighter;
+$headerInnerBg: $gray;
+$headerTextColor: $grayDarker;
+
+$navBg: $grayLighter;
+$navInnerBg: $grayLight;
+
+$footerBg: $grayLighter;
+$footerInnerBg: $grayLight;
+
+$contentTextColor: $grayDark;
+
+/**
+ * Layout related vars
+ */
+$paddingAmt: 40px;
+$paddingInnerAmt: 20px;
+$contentAreaMarginAmt: 40px;
+
+
+
