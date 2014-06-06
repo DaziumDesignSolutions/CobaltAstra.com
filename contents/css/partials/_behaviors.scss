@@ -75,6 +75,7 @@ html.js {
 
       .solution-expanded {
         opacity: 0;
+        display: none;
       }
 
       .solution-compacted {
@@ -96,6 +97,46 @@ html.js {
             position: static;
             transform: translate(0, 0);
             opacity: 1;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .solution-compacted {
+      .features {
+        .feature {
+          cursor: pointer;
+          overflow: hidden;
+
+          &, .feature-inner, .icon, .content p {
+            transition-property: all;
+            transition-duration: $anim-duration;
+          }
+
+          .content {
+            p {
+              display: block;
+              opacity: 0;
+            }
+          }
+
+          &:hover {
+            background-color: darken($grayLight, 10%);
+
+            .feature-inner {
+              margin-top: -60px;
+            }
+
+            .icon {
+              opacity: 0;
+            }
+
+            .content {
+              p {
+                opacity: 1;
+              }
+            }
           }
         }
       }

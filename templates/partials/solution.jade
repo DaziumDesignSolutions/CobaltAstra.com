@@ -15,18 +15,19 @@
 
   article
     .solution-compacted
-      .vpadded
+      .vpadded(style='padding-bottom: 10px')
         .hpadded!= solution.html
 
-        ul.list-unstyled.align-center
+        ul.features.list-unstyled.align-center
           each feature in features
             - var icon_file = feature.metadata.icon
             - var iconDimensions = 60
             - var icon_alt  = icon_file.match(/^(.*?)\.(png|jpg)$/)[1].split('-').join(' ')
             li.feature
-              .icon
-                img(src='/images/solution-icons/' + icon_file, width=iconDimensions, alt=icon_alt)
-              .title!= feature.html
+              .feature-inner
+                .icon
+                  img(src='/images/solution-icons/' + icon_file, width=iconDimensions, alt=icon_alt)
+                .content!= feature.html
 
     .solution-expanded
       .row

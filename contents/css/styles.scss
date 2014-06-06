@@ -471,35 +471,40 @@ footer {
         }
       }
 
+      .features {
+        margin-top: 2em;
+
+        .feature {
+          margin-bottom: 1em;
+        }
+      }
+
       .solution-compacted {
         display: none;
 
         .feature {
-          width: 170px;
+          width: 180px;
+          height: 160px;
           display: inline-block;
-          margin-left: 10px;
+          margin: 0;
+          padding: 10px 5px;
           vertical-align: top;
 
           &:first-child {
             margin-left: 0;
           }
 
-          .title {
-            * { display: none; }
-
+          .content {
             h1, h2, h3, h4, h5, h6 {
               display: block;
               font-size: 16px;
             }
+
+            p {
+              display: none;
+              font-size: 0.85em;
+            }
           }
-        }
-      }
-
-      .features {
-        margin-top: 2em;
-
-        .feature {
-          margin-bottom: 1em;
         }
       }
 
