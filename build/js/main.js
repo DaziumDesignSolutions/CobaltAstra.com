@@ -34,8 +34,6 @@ $(function() {
   $(document).on('click', '#our-solutions .solutions .solution header', solutionToggleHandler);
 
   $(document).on('page:update', function(e) {
-    console.log('document.location');
-    console.log(document.location);
     var sol_hashes = ['#hr-services', '#hr-consulting', '#hr-outsourcing'];
 
     if (sol_hashes.indexOf(document.location.hash) >= 0) {
