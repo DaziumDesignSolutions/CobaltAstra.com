@@ -3,7 +3,8 @@
     "moment": "2.3.x",
     "underscore": "1.4.x",
     "typogr": "0.5.x",
-    "slugg": "0.1.x"
+    "slugg": "0.1.x",
+    "autoprefixer": "1.1.x"
   },
   "repository": "none"
 }

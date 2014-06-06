@@ -14,7 +14,8 @@
     "moment": "moment",
     "_": "underscore",
     "typogr": "typogr",
-    "slugg": "slugg"
+    "slugg": "slugg",
+    "autoprefixer": "autoprefixer"
   },
   "jade": {
     "pretty": true
