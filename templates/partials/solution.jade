@@ -1,6 +1,6 @@
-- var name = solution.filepath.relative.match(/solutions[\/]\d+-(.*?)\.md$/)[1]
+- var name = solution.filepath.relative.match(/solutions.\d+-(.*?)\.md$/)[1]
 - var features = _.chain(solution.parent[name]._.pages).sortBy(function(item) {
--   var ptn = RegExp('solutions/' + name + '/' + '(\\d+)-.*')
+-   var ptn = RegExp('solutions.' + name + '.' + '(\\d+)-.*')
 -   var match = item.filepath.relative.match(ptn)
 -   return parseInt(match[1])
 - }).value();

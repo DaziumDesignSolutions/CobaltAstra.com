@@ -7,10 +7,10 @@ block title
 block content
 
   - var solutions = _.chain(contents['solutions']._.pages).filter(function(item) {
-  -   var match = item.filepath.relative.match(/solutions[\/](\d+)-(.*?)\.md/)
+  -   var match = item.filepath.relative.match(/solutions.(\d+)-(.*?)\.md/)
   -   return match
   - }).sortBy(function(item) {
-  -   var match = item.filepath.relative.match(/solutions[\/](\d+)-(.*?)\.md/)
+  -   var match = item.filepath.relative.match(/solutions.(\d+)-(.*?)\.md/)
   -   return match ? parseInt(match[1]) : 0;
   - }).value();
 
