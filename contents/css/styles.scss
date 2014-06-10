@@ -5,11 +5,14 @@
  */
 .btn-primary {
   background-color: $blueDark;
+  border-color: $blueDark;
+  border-radius: 0;
 
   &:hover {
     background-color: lighten($blueDark, 5%);
   }
 }
+.col-sm-4 .approach.technology, .col-sm-4 .approach.commitment { padding-top: 10px; } 
 
 /**
  * Layout helpers
