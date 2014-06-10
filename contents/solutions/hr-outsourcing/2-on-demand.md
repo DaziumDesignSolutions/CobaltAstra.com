@@ -4,4 +4,4 @@ icon: hr-on-demand.png
 
 #### HR On-Demand
 
-Our team is available when you have questions.
+With expertise in all areas of HR, our team is available to support you from basic needs to complex HR issues.
