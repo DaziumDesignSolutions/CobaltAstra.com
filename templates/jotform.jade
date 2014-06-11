@@ -1,8 +1,8 @@
 extends layout
 
 block title
-  - var jotform_id = page.metadata.jotform_embed.match(/form\/(\d+)/)[1]
-  //- var page_id = page.filepath.full.match(/\/([-_A-Za-z]+)\.json$/)[1]
+  - var jotform_id = page.metadata.jotform_embed.match(/form.(\d+)/)[1]
+  - var page_id = page.filepath.full.match(/.([-_A-Za-z]+)\.json$/)[1]
   = page.metadata.title + ' | ' + locals.name
 
 block content
