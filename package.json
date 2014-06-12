@@ -5,7 +5,7 @@
     "typogr": "0.5.x",
     "slugg": "0.1.x",
     "autoprefixer": "1.1.x",
-    "wintersmith-node-sass": "Leglaw/wintersmith-node-sass"
+    "wintersmith-node-sass": "Leglaw/wintersmith-node-sass#release"
   },
   "repository": "none"
 }
