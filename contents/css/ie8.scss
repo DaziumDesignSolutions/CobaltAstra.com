@@ -1,0 +1,38 @@
+html.js {
+  #our-solutions {
+    .solution-compacted {
+      .features {
+        .feature {
+          .content {
+            p {
+              display: none;
+            }
+          }
+
+          &:hover {
+            .icon {
+              visibility: hidden;
+            }
+
+            .content {
+              p {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .solution {
+      &.expanded {
+        .solution-compacted{
+          display: none;
+        }
+
+        .solution-expanded{
+        }
+      }
+    }
+  }
+}
