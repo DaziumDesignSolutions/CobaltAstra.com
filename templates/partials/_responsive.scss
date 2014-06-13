@@ -1,0 +1,77 @@
+@media (max-width: 768px) {
+  #home-solutions-overview {
+    .solution {
+      padding-bottom: 30px;
+
+      .content {
+        height: auto;
+      }
+    }
+  }
+
+  html.js {
+    #our-solutions {
+      .solutions {
+        .solution {
+          .expand {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #home-solutions-overview {
+    .solution {
+      .content {
+        min-height: 160px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #home-index, #our-approach, #knowledge-technology {
+    .align-right { text-align: left; }
+  }
+
+  #home-banner, #our-solutions-banner, #about-us-banner, #contact-us-banner {
+    height: 400px;
+  }
+
+  #knowledge-technology {
+    .solution {
+      margin-bottom: 2em;
+
+      .align-center { text-align: left; }
+
+      &.empowering {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #home-solutions-overview {
+    .solution {
+      .content {
+        min-height: 120px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #home-solutions-overview {
+    .solution {
+      .content {
+        min-height: 100px;
+      }
+    }
+  }
+}
