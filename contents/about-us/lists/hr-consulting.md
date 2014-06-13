@@ -7,4 +7,4 @@
 * Performance Management
 * Training and Development
 * Compensation Design
-* Healthand Wellness
+* Health and Wellness
