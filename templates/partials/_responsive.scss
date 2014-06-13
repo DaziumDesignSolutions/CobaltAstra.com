@@ -1,3 +1,5 @@
+/* @import "partials/variables"; */
+
 @media (max-width: 768px) {
   #home-solutions-overview {
     .solution {
@@ -15,6 +17,33 @@
         .solution {
           .expand {
             display: none;
+          }
+        }
+      }
+    }
+  }
+
+  #our-solutions {
+    .solutions {
+      .solution {
+        header {
+          $mSolHeaderHeight: 50px;
+          $mIconHeight: 40px;
+
+          height: $mSolHeaderHeight;
+
+          .icon {
+            padding: ($mSolHeaderHeight - $mIconHeight) / 2;
+
+            img {
+              width: $mIconHeight;
+            }
+          }
+
+          .title {
+            line-height: $mSolHeaderHeight;
+            padding-left: $mSolHeaderHeight + 10;
+            font-size: 1.4em;
           }
         }
       }
