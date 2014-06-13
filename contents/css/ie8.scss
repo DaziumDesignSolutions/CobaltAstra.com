@@ -36,3 +36,10 @@ html.js {
     }
   }
 }
+
+#home-banner, #about-us-banner, #our-solutions-banner, #contact-us-banner {
+  h1 {
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#777777,direction=120, strength=5);
+  }
+}
+
