@@ -1,6 +1,39 @@
 /* @import "partials/variables"; */
 
 @media (max-width: 768px) {
+  $mPaddingAmt: 10px;
+
+  .hpadded {
+    padding: 0 $mPaddingAmt;
+  }
+  .vpadded {
+    padding: $mPaddingAmt 0;
+  }
+  .padded {
+    padding: $mPaddingAmt;
+  }
+
+  header {
+    .container {
+      padding: 10px;
+    }
+
+    #logo {
+      img {
+      }
+    }
+
+    #header-form-links {
+      li {
+        display: none;
+
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+  }
+
   #home-solutions-overview {
     .solution {
       padding-bottom: 30px;
