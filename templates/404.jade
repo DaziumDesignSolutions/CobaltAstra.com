@@ -1,0 +1,41 @@
+extends layout
+
+block title
+  | 404 Not Found | 
+  = locals.name
+
+block content
+  #not_found
+    .container
+      != contents['404-content.md'].html
+      
+      #not_found_about_us.not_found_content
+        .not_found_header
+          img.img-responsive(src=contents.images['404-icons']['icon_404_about.png'].url)
+          a(href='about-us.html') ABOUT US
+        .not_found_content_links
+          ul
+            li
+              a(href='about-us.html#expert-knowledge') EXPERT KNOWLEDGE
+            li
+              a(href='about-us.html#our-approach') OUR APPROACH
+            li
+              a(href='about-us.html#trusted-partnerships') TRUSTED PARTNERSHIPS
+
+      #not_found_solutions.not_found_content
+        .not_found_header
+          img.img-responsive(src=contents.images['404-icons']['icon_404_solutions.png'].url)
+          a(href='our-solutions.html') OUR SOLUTIONS
+        .not_found_content_links
+          ul
+            li
+              a(href='/our-solutions.html#hr-services') HR SERVICES
+            li
+              a(href='/our-solutions.html#hr-consulting') HR CONSULTING
+            li
+              a(href='/our-solutions.html#hr-outsourcing') HR OUTSOURCING
+
+      #not_found_contact.not_found_content
+        .not_found_header
+          img.img-responsive(src=contents.images['404-icons']['icon_404_contact.png'].url)
+          a(href='contact-us.html') CONTACT US

@@ -469,5 +469,21 @@ footer {
   }
 }
 
+.not_found_content { float: left; width: 30%; clear: both; }
+#not_found_about_us { margin-top: 40px; }
+#not_found_about_us .not_found_header { background-color: $blueDark; }
+#not_found_solutions { margin-top: 10px; }
+#not_found_solutions .not_found_header { background-color: $redBrown; }
+#not_found_contact { margin-top: 10px; }
+#not_found_contact .not_found_header { background-color: $greenDark; }
+
+.not_found_header { height: 42px; line-height:  44px; font-size: 20px; margin-bottom: 3px; }
+.not_found_header a { margin-left: 15px; color: #fff; }
+.not_found_header img { float: left; width: 35px; margin-left: 6px; margin-right: 6px; }
+.not_found_content_links ul { list-style: none; margin: 0; padding: 0; }
+.not_found_content_links li { margin-left: 60px; padding: 3px; }
+.not_found_content_links li a { color: $redBrown; }
+
+
 @import "partials/behaviors";
 @import "partials/_responsive";
