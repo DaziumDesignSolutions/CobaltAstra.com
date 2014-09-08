@@ -469,16 +469,6 @@ footer {
   }
 }
 
-#our-team {
-  .full-bio { color: $blueDark; }
-}
-
-#our-team, #team-member-profile {
-  .member_name, .title {
-    color: $blueDark;
-  }
-}
-
 #our-team, #team-member-profile {
   .member_name {
     margin-top: 0;
@@ -511,7 +501,7 @@ footer {
       a:hover { text-decoration: none; color: $grayDarker; }
     }
   }
-  background-color: #1e4a1e;
+  background-color: $greenDark;
 }
 
 .not_found_content { float: left; width: 30%; clear: both; min-width: 320px; }
