@@ -469,6 +469,51 @@ footer {
   }
 }
 
+#our-team {
+  .full-bio { color: $blueDark; }
+}
+
+#our-team, #team-member-profile {
+  .member_name, .title {
+    color: $blueDark;
+  }
+}
+
+#our-team, #team-member-profile {
+  .member_name {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+  .title {
+    margin-top: 0;
+  }
+}
+
+#team-member-profile {
+  .return-to-full-listing {
+    background-color: $blueDark;
+    color: #fff;
+    padding: 5px 10px;
+  }
+}
+
+#our_team_navigation {
+  padding: 20px;
+  .content-area {
+    margin-bottom: 10px;
+    .our-team-navigation {
+      a { 
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        display: block;
+        margin-bottom: 0;
+      }
+      a:hover { text-decoration: none; color: $grayDarker; }
+    }
+  }
+  background-color: #1e4a1e;
+}
+
 .not_found_content { float: left; width: 30%; clear: both; min-width: 320px; }
 #not_found_about_us { margin-top: 40px; }
 #not_found_about_us .not_found_header { background-color: $blueDark; }
