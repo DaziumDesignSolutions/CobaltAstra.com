@@ -1,0 +1,15 @@
+- var idx = member.url.lastIndexOf('/');
+- var path = member.url.slice(1,idx);
+- var image_url = '/' + path + '/' + member.metadata.image_sm;
+- var link_url = '/' + path + '/' + member.metadata.link;
+
+.col-sm-6
+  .content-area
+    .our-team-feature
+      .row
+        .col-sm-4
+          img.img-responsive(src=image_url)
+        .col-sm-8
+          h3.member_name= member.metadata.name
+          p.title= member.metadata.title
+          a(href=link_url, class='full-bio')= 'Click for full bio'

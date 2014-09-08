@@ -1,0 +1,40 @@
+extends layout
+
+block title
+  | Our Team | 
+  = locals.name
+
+block content
+  - var content = contents['our-team-content.md'];
+  - var our_team = _.chain(contents['our-team']._.pages).filter(function(item) {
+  -   var ptn = RegExp('our-team/' + '(\\d+)-.*');
+  -   var match = item.url.match(ptn);
+  -   return match
+  - }).sortBy(function(item) {
+  -   var match = item.filepath.relative.match(/solutions.(\d+)-(.*?)\.md/)
+  -   return match ? parseInt(match[1]) : 0;
+  - }).value();
+
+
+  #our-team
+    .container
+      .content-area
+        .graybox
+          .padded
+            h2= content.title
+            != content.html
+      .row
+        .col-sm-3
+          #our_team_navigation
+            each member in our_team
+              include partials/our-team-navigation
+        .col-sm-9
+          #our_team
+            each member in our_team
+              include partials/our-team-members
+
+block footermsg
+  .container
+    .heading-box.blueDark
+      h3 Expereinced professionals bringing HR to a higher level
+

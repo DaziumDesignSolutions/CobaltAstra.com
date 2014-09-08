@@ -1,0 +1,7 @@
+- var idx = member.url.lastIndexOf('/');
+- var path = member.url.slice(1,idx);
+- var link_url = '/' + path + '/' + member.metadata.link;
+
+.content-area
+  .our-team-navigation
+    a(href=link_url)= member.metadata.name

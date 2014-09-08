@@ -1,0 +1,21 @@
+extends layout
+
+block title
+  - var content = contents['our-team'][page.metadata.file];
+  - var image_url = page.getLocation() + content.metadata.image_lg;
+  | Our Team | 
+  = content.metadata.name
+
+block content
+  #team-member-profile
+    .container
+      .team-member
+        .row
+          .col-sm-4
+            img.img-responsive(src=image_url)
+          .col-sm-8.member-profile
+            h3.member_name= content.metadata.name
+            p.title= content.metadata.title
+            != content.html
+            div.clear
+            a(href='/our-team.html', class='return-to-full-listing')= 'Return to full listing'
